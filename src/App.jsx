@@ -897,10 +897,8 @@ function App() {
           const isOpen = await OBR.action.isOpen();
           if (!isOpen) {
             if (role === "GM") {
-              if (lastMessage.user !== name) {
-                setUnreadCount(unreadCount + 1);
-                OBR.action.setBadgeText("" + (unreadCount + 1));
-              }
+              setUnreadCount(unreadCount + 1);
+              OBR.action.setBadgeText("" + (unreadCount + 1));
             }
           }
         }
@@ -1161,7 +1159,7 @@ function App() {
     );
   };
 
-  const renderHelp = () => {
+  const renderSetbacks = () => {
     return (
       <div
         className="outline"
@@ -1285,7 +1283,7 @@ function App() {
           }}
         >
           {showHelper
-            ? renderHelp()
+            ? renderSetbacks()
             : chat.length
             ? chat
                 .sort((a, b) => a.id - b.id)
