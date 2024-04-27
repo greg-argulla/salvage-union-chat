@@ -486,7 +486,9 @@ function App() {
       return (
         <div style={{ marginBottom: 8 }}>
           <div className="outline">
-            <div>{item.user}</div>
+            <div>
+              {item.user} ({rollTable[item.rollTableIndex].name})
+            </div>
           </div>
           <div
             style={{
