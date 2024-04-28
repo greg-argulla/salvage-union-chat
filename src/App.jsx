@@ -1127,7 +1127,6 @@ function App() {
             width: 60,
           }}
           onClick={() => {
-            setShowHelper(!showHelper);
             if (!showHelper) {
               setTimeout(() => {
                 var objDiv = document.getElementById("chatbox");
@@ -1136,6 +1135,7 @@ function App() {
                 }
               }, 100);
             }
+            setShowHelper(!showHelper);
           }}
         >
           {!showHelper ? "Chat" : "Setbacks"}
