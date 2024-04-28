@@ -340,6 +340,35 @@ const rollTable = [
       },
     },
   },
+
+  {
+    name: "Travel",
+    table: {
+      20: {
+        name: "Discovery!",
+        description: "Denotes some kind of reward or discovery.",
+      },
+      11: {
+        name: "Safe Travel",
+        description: "Denotes safe travel with perhaps a scenic note",
+      },
+      6: {
+        name: "Travel Dilema",
+        description:
+          "Denotes a situation where the Pilots will need to make a difficult choice.",
+      },
+      2: {
+        name: "You are in Danger!",
+        description:
+          "Denotes a situation where the Pilots are attacked or put in danger by a local threat.",
+      },
+      1: {
+        name: "Travel Disaster!",
+        description:
+          "Denotes a situation where the Pilots are attacked or put in danger by a significant threat.",
+      },
+    },
+  },
 ];
 
 const parseQuote = (str) => {
