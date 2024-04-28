@@ -842,6 +842,12 @@ function App() {
   useEffect(() => {
     if (chatToCheckChanges.length !== chat.length) {
       setChat(chatToCheckChanges);
+      setTimeout(() => {
+        var objDiv = document.getElementById("chatbox");
+        if (objDiv) {
+          objDiv.scrollTop = objDiv.scrollHeight;
+        }
+      }, 100);
     }
   }, [chatToCheckChanges]);
 
@@ -1122,6 +1128,14 @@ function App() {
           }}
           onClick={() => {
             setShowHelper(!showHelper);
+            if (!showHelper) {
+              setTimeout(() => {
+                var objDiv = document.getElementById("chatbox");
+                if (objDiv) {
+                  objDiv.scrollTop = objDiv.scrollHeight;
+                }
+              }, 100);
+            }
           }}
         >
           {!showHelper ? "Chat" : "Setbacks"}
