@@ -1041,6 +1041,17 @@ function App() {
     }, 100);
   };
 
+  useEffect(() => {
+    if (!showHelper) {
+      setTimeout(() => {
+        var objDiv = document.getElementById("chatbox");
+        if (objDiv) {
+          objDiv.scrollTop = objDiv.scrollHeight;
+        }
+      }, 100);
+    }
+  }, [showHelper]);
+
   if (cookiesNotEnabled) {
     return (
       <div
@@ -1127,14 +1138,6 @@ function App() {
             width: 60,
           }}
           onClick={() => {
-            if (!showHelper) {
-              setTimeout(() => {
-                var objDiv = document.getElementById("chatbox");
-                if (objDiv) {
-                  objDiv.scrollTop = objDiv.scrollHeight;
-                }
-              }, 100);
-            }
             setShowHelper(!showHelper);
           }}
         >
