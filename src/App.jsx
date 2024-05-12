@@ -500,9 +500,11 @@ function App() {
     }
 
     useEffect(() => {
-      const audio = new Audio(sfxURL);
-      audio.volume = 0.2;
-      audio.play();
+      if (index > props.chatLength - 1) {
+        const audio = new Audio(sfxURL);
+        audio.volume = 0.2;
+        audio.play();
+      }
     }, []);
 
     const { item, index } = JSON.parse(propsString);
