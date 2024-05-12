@@ -130,6 +130,37 @@ const rollTable = [
   },
 
   {
+    name: "Push Your Mech",
+    table: {
+      20: {
+        name: "Push Your Mech",
+        description:
+          "Gain 2 heat and check the roll. If you roll equal to or lower than your current heat, make a Reactor Overload check, else your reactor is safe, for now.",
+      },
+      11: {
+        name: "Push Your Mech",
+        description:
+          "Gain 2 heat and check the roll. If you roll equal to or lower than your current heat, make a Reactor Overload check, else your reactor is safe, for now.",
+      },
+      6: {
+        name: "Push Your Mech",
+        description:
+          "Gain 2 heat and check the roll. If you roll equal to or lower than your current heat, make a Reactor Overload check, else your reactor is safe, for now.",
+      },
+      2: {
+        name: "Push Your Mech",
+        description:
+          "Gain 2 heat and check the roll. If you roll equal to or lower than your current heat, make a Reactor Overload check, else your reactor is safe, for now.",
+      },
+      1: {
+        name: "Push Your Mech",
+        description:
+          "Gain 2 heat and check the roll. If you roll equal to or lower than your current heat, make a Reactor Overload check, else your reactor is safe, for now.",
+      },
+    },
+  },
+
+  {
     name: "Reactor Overload",
     table: {
       20: {
